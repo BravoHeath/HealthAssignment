@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Behavioral Health Test Tool</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    .container {
+      margin-top: 50px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Behavioral Health Test Tool</h1>
+
+  <!-- Five-step evaluation form -->
+  <form>
+    <div class="form-group">
+      <label for="emotionalState">Current Emotional State:</label>
+      <input type="number" class="form-control" id="emotionalState" min="1" max="10">
+    </div>
+    <div class="form-group">
+      <label for="distressingThoughts">Distressing Thoughts or Feelings:</label>
+      <div>
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id="distressingThoughts"> Yes
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="supportSystem">Support System:</label>
+      <textarea class="form-control" id="supportSystem"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="copingMechanisms">Coping Mechanisms:</label>
+      <textarea class="form-control" id="copingMechanisms"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="needsImmediateHelp">Do You Need Immediate Help:</label>
+      <div>
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id="needsImmediateHelp"> Yes
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
